@@ -27,7 +27,7 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
+        {/* <CustomDropdown
           noLiPadding
           buttonText="Components"
           buttonProps={{
@@ -47,17 +47,28 @@ export default function HeaderLinks(props) {
               Documentation
             </a>,
           ]}
-        />
+        /> */}
+        <Link to="#about" className={classes.dropdownLink}>
+          ABOUT
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
+        <Link to="#gallery" className={classes.dropdownLink}>
+          GALLERY
+        </Link>
+        {/* <Button
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
           <CloudDownload className={classes.icons} /> Download
-        </Button>
+        </Button> */}
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/" className={classes.dropdownLink}>
+          CONTACT
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">

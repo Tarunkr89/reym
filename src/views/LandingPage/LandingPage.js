@@ -21,6 +21,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
+import ProfilePage from "views/ProfilePage/ProfilePage.js";
 
 const dashboardRoutes = [];
 
@@ -34,7 +35,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="Reym Photography"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -71,8 +72,9 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
+          {/* <ProductSection />
+          <TeamSection /> */}
+          <ProfilePage />
           <WorkSection />
         </div>
       </div>
