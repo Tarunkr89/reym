@@ -20,14 +20,18 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Work with us</h2>
-          <h4 className={classes.description}>
+          <h2 className={classes.title}>Connect with me</h2>
+          {/* <h4 className={classes.description}>
             Divide details about your product or agency work into parts. Write a
             few lines about each one and contact us about any further
             collaboration. We will responde get back to you in a couple of
             hours.
-          </h4>
-          <form>
+          </h4> */}
+
+          <h4 className={classes.description}>Phone number: 971-504365719</h4>
+          <h4 className={classes.description}>Email: renumahor19@ gmail.com</h4>
+          <h4 className={classes.description}>Address: JLT Dubai</h4>
+          <form className="mt-50">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput

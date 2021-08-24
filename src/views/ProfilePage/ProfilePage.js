@@ -7,6 +7,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
+import Fabric from "@material-ui/icons/Style";
+import ProductIcon from "@material-ui/icons/PhoneIphone";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -43,6 +45,18 @@ import product8 from "assets/img/products/8.jpg";
 import product9 from "assets/img/products/9.jpg";
 import product10 from "assets/img/products/10.jpg";
 import product11 from "assets/img/products/11.jpg";
+import product12 from "assets/img/products/12.jpg";
+import product13 from "assets/img/products/13.jpg";
+import product14 from "assets/img/products/14.jpg";
+import product15 from "assets/img/products/15.jpg";
+import product16 from "assets/img/products/16.jpg";
+import product17 from "assets/img/products/17.jpg";
+import product18 from "assets/img/products/18.jpg";
+import product19 from "assets/img/products/19.jpg";
+import product20 from "assets/img/products/20.jpg";
+import product21 from "assets/img/products/21.jpg";
+import product22 from "assets/img/products/22.jpg";
+import product23 from "assets/img/products/23.jpg";
 
 import fabric1 from "assets/img/fabric/1.JPG";
 import fabric2 from "assets/img/fabric/2.JPG";
@@ -88,6 +102,18 @@ const productsData = [
   { src: product9 },
   { src: product10 },
   { src: product11 },
+  { src: product12 },
+  { src: product13 },
+  { src: product14 },
+  { src: product15 },
+  { src: product16 },
+  { src: product17 },
+  { src: product18 },
+  { src: product19 },
+  { src: product20 },
+  { src: product21 },
+  { src: product22 },
+  { src: product23 },
 ];
 const fabricData = [
   { src: fabric1 },
@@ -268,7 +294,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Products",
-                      tabIcon: Favorite,
+                      tabIcon: ProductIcon,
                       tabContent: (
                         <div className="grid-section grid-image-fr">
                           {productsData.map((item, index) => {
@@ -287,7 +313,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Fabric",
-                      tabIcon: Favorite,
+                      tabIcon: Fabric,
                       tabContent: (
                         <div className="grid-section grid-image-fr">
                           {fabricData.map((item, index) => {
